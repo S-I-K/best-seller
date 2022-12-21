@@ -14,12 +14,18 @@
     <link rel="stylesheet" href="./css/font/font.css" />
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" defer></script>
+    <!-- plugin-swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- script -->
     <script src="./js/script.js" defer></script>
-
     <title>Best Seller</title>
   </head>
   <body>
+    <!-- nav -->
     <nav>
       <ul id="nav">
         <li class="logo">
@@ -42,5 +48,52 @@
         </li>
       </ul>
     </nav>
+
+    <!-- main -->
+    <main>
+      <!-- main slide -->
+      <section id="main_slide" class="swiper mySwiper section">
+        <div class="swiper-wrapper">
+          <!-- main1 -->
+          <div id="main1" class="swiper-slide">
+            <!-- main inner -->
+            <div class="main_inner">
+              <!-- main txt -->
+              <div class="main_txt">
+                <p>소비를</p>
+                <p>가치로 <span>잇</span>다</p>
+              </div>
+              <!-- btn area -->
+              <div class="btn_area">
+                <a class="slide_btn" href="#">셀럽시작하기</a>
+                <p>
+                  <a class="slide_btn" href="#">입점문의</a>
+                  <a class="slide_btn" href="#">라이브커머스</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- main2 -->
+          <div id="main2" class="swiper-slide">
+            <!-- main inner -->
+            <div class="main_inner">
+              <!-- main txt -->
+              <div class="main_txt">
+                <p>인플루언서의</p>
+                <p>혜택을 <span>잇</span>다</p>
+              </div>
+              <!-- btn area -->
+              <div class="btn_area">
+                <a class="slide_btn" href="#">인플루언서 시작하기</a>
+                <p>
+                  <a class="slide_btn" href="#">입점문의</a>
+                  <a class="slide_btn" href="#">라이브커머스</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
