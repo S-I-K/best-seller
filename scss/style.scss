@@ -1,19 +1,20 @@
-body * {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
+@charset 'UTF-8';
+
+body * { 
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   font-size: 16px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 /* nav */
 nav {
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   z-index: 10;
+
   #nav {
     max-width: 1412px;
-    // outline: 1px solid red;
     margin: 0 auto;
     padding: 42px 0;
     display: flex;
@@ -21,68 +22,90 @@ nav {
       margin-right: 26px;
     }
     a {
-      font: bold 16px / 1.5 "Spoqa Han Sans Neo";
+      font: bold 16px/1.5 'Spoqa Han Sans Neo';
+      // font: font-weight font-size/line-height font-family;
+
       color: #262626;
     }
-    .logo {
-      a {
-        background: url("../images/bs_logo.svg") no-repeat center center / cover;
-        display: block;
-        width: 123px;
-        height: 28px;
-        // outline: 1px solid blue;
-        font-size: 0;
-        margin-right: 62px;
-      }
+    .logo a{
+      width: 123px; height: 28px;
+      display: block;
+      margin-right: 62px;
+      background: url("../images/bs_logo.svg") no-repeat center center / cover;
+      /*
+        background-size: cover;
+        background가 들어가는 요소의 크기에 맞게
+        *비율을 유지한 상태로 빈 공백 없이 채워서 넣음
+      */
+
+      // a안의 텍스트 숨김 (실무에서 사용하는 속성들)
+      line-height: 400px;
+      overflow: hidden;
+      text-indent: -9999px; /* 텍스트 들여쓰기 */
+      font-size: 0;
+      color: transparent; /* 글자 색상을 투명색으로 설정 */
     }
-  }
-}
-/* main */
+
+  } // e: #nav
+
+} // e: nav
+
 main {
+
   .section {
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
+    /*
+      vh - 뷰포트 높이 기준 %
+      vw - 뷰포트 너비 기준 %
+    */
     min-height: 820px;
     position: relative;
   }
+
   #main1 {
     background: url("../images/bg_main.jpeg") no-repeat center center / cover;
   }
+
   #main2 {
     background: url("../images/bg_main1.jpeg") no-repeat center center / cover;
   }
+
   #main_slide .swiper-slide {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     display: flex;
     align-items: center;
+    /* 수직축(세로방향) 기준 콘텐츠를 가운데 배치 */
   }
+
+  // 활성화 슬라이드 효과
   .swiper-slide-active {
     .main_inner .main_txt {
       transform: translateY(0);
+      transition-delay: .4s;
       opacity: 1;
     }
     .main_inner .btn_area {
       transform: translateY(0);
       opacity: 1;
+      transition-delay: .7s;
     }
   }
+
+
   .main_inner {
-    width: 100%;
-    max-width: 1412px;
-    // outline: 1px solid blue;
+    width: 100%; max-width: 1412px;
     margin: 0 auto;
-    /* main txt */
     .main_txt {
       margin-bottom: 30px;
       transform: translateY(50px);
-      transition: all 0.4s;
-      transition-delay: 0.4s;
+      transition: all .4s;
       opacity: 0;
       p {
         font-size: 64px;
         font-weight: bold;
         line-height: 1.25;
+        // font: bold 64px/1.25;
       }
       span {
         position: relative;
@@ -90,21 +113,19 @@ main {
         margin-right: 8px;
       }
       span::after {
-        content: "";
-        display: block;
-        width: 58px;
-        height: 39px;
+        content:''; display: block;
+        width: 58px; height: 39px;
         background: url("../images/it.png") no-repeat center / cover;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 0; right: 0;
       }
-    }
+    } //e: .main_txt
+
     .btn_area {
-      transform: translateY(-50px);
-      transition: all 0.4s;
-      transition-delay: 0.8s;
+      transform: translateY(50px);
+      transition: all .4s;
       opacity: 0;
+
       .slide_btn {
         font-size: 20px;
         font-weight: 500;
@@ -114,7 +135,7 @@ main {
         line-height: 1;
         padding: 16px 30px;
         border-radius: 34px;
-        transition: background 0.4s;
+        transition: all .3s;
         margin-right: 6px;
       }
       .slide_btn:hover {
@@ -124,6 +145,133 @@ main {
         margin-top: 15px;
         font-size: 0;
       }
+    } //e: .btn_area
+  } // e: .main_inner
+
+
+  #best_seller {
+    background: url("../images/bg_gradient.jpeg") no-repeat center / cover;
+
+    .section_inner {
+      height: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: calc((100% - 1358px)/ 2);
     }
-  }
-}
+
+    .txt_title{
+      margin-bottom: 170px;
+
+      p {
+        font-size: 48px;
+        line-height: 1.25;
+      }
+      .text_bold {
+        font-weight: bold;
+      }
+      span {
+        position: relative;
+        padding-right: 20px;
+      }
+      span::after {
+        content:''; display: block;
+        width: 20px; height: 20px;
+        background: url("../images/ic_it.png") no-repeat center / cover;
+        position: absolute;
+        right: 0; top: 0;
+      }
+
+    } // e: .txt_title
+
+    .seller_btn {
+      display: inline-block;
+      background: #262626;
+      color: #fff;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-bottom: 28px;
+
+      span {
+        position: relative;
+        padding-right: 18px;
+        display: inline-block;
+      }
+      span::after {
+        content:''; display: block;
+        width: 8px; height: 14px;
+        background: url("../images/ic_arrow.png") no-repeat right / cover;
+        position: absolute;
+        right: 0; top: 2px;
+        transform: rotate(180deg);
+      }
+    } // e: .seller_btn
+
+    .seller_txt {
+      font-weight: 500;
+      line-height: 1.3;
+      color: #9d9d9d;
+
+    }
+    .seller_txt:nth-of-type(2){
+      color:#ab96fd;
+    }
+
+    #seller_swiper {
+      width: calc(100% - (382px + 66px));
+      outline: 1px solid blue;
+      margin-left: auto;
+      margin-right: 0;
+
+      .swiper-slide {
+        background: #ddd;
+        width: 332px;
+        height: 500px;
+        border-radius: 14px;
+        overflow: hidden;
+
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        flex-direction: column; // 콘텐츠 정렬 순서
+      }
+      .slide1 {
+        background: url("../images/seller2.jpg") no-repeat center / cover;
+      }
+      .slide2 {
+        background: url("../images/seller3.jpg") no-repeat center / cover;
+      }
+      .slide3 {
+        background: url("../images/seller4.jpg") no-repeat center / cover;
+      }
+      .slide4 {
+        background: url("../images/seller5.jpg") no-repeat center / cover;
+      }
+
+      .seller_item_inner {
+        background: #fff;
+        width: 100%;
+        padding: 32px;
+
+        .card_title {
+          font-size: 19px;
+          color: #9d9d9d;
+          letter-spacing: -0.02em;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+        .sub_title {
+          font-size: 16px;
+          font-weight: bold;
+          color:#ab96fd;
+          margin-bottom: 4px;
+        }
+        .price {
+          font-size: 32px;
+          font-weight: bold;
+        }
+      } // e: .seller_item_inner
+    } // e: #seller_swiper
+  } // e: #best_seller 
+
+} // e: main
