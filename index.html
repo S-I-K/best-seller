@@ -1,148 +1,293 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best seller</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="images/bs_favicon.png">
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- reset css -->
-  <link rel="stylesheet" href="css/reset.css">
-  <!-- font -->
-  <link rel="stylesheet" href="css/font/font.css">
-  <!-- jQuery 연결 -->
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
-  <!-- 플러그인 연결 -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best seller</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/bs_favicon.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="css/font/font.css" />
+    <!-- jQuery 연결 -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <!-- 플러그인 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <!-- js 호출 -->
-  <script src="js/script.js"></script>
-</head>
-<body>
-  
-  <nav>
-    <ul id="nav">
-      <li class="logo">
-        <a href="#">best seller</a>
-      </li>
-      <li><a href="#">베스트셀러</a></li>
-      <li><a href="#">베스트링크</a></li>
-      <li><a href="#">회사 소개</a></li>
-      <li><a href="#">입점 문의</a></li>
-      <li><a href="#">라이브 커머스 신청</a></li>
-    </ul>
-  </nav>
+    <!-- js 호출 -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul id="nav">
+        <li class="logo">
+          <a href="#">best seller</a>
+        </li>
+        <li><a href="#">베스트셀러</a></li>
+        <li><a href="#">베스트링크</a></li>
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">입점 문의</a></li>
+        <li><a href="#">라이브 커머스 신청</a></li>
+      </ul>
+    </nav>
 
-  <main>
-    <section id="main_slide" class="swiper mySwiper section">
-      <div class="swiper-wrapper">
-        <div id="main1" class="swiper-slide">
-          <div class="main_inner">
-            <div class="main_txt">
-              <p>소비를</p>
-              <p>가치로 <span>잇</span>다</p>
-            </div> <!--// .main_txt -->
-            <div class="btn_area">
-              <a class="slide_btn" href="#">셀러시작하기</a>
-              <p>
-                <a class="slide_btn" href="#">입점문의</a>
-                <a class="slide_btn" href="#">라이브커머스</a>
-              </p>
-
-            </div> <!--// .btn_area -->
-          </div> <!--// .main_inner -->
-        </div> <!--// #main1 -->
-
-        <div id="main2" class="swiper-slide">
-          <div class="main_inner">
-            <div class="main_txt">
-              <p>인플루언서의</p>
-              <p>혜택을 <span>잇</span>다</p>
-            </div> <!--// .main_txt -->
-            <div class="btn_area">
-              <a class="slide_btn" href="#">인플루언서 시작하기</a>
-              <p>
-                <a class="slide_btn" href="#">입점문의</a>
-                <a class="slide_btn" href="#">라이브커머스</a>
-              </p>
-              
-            </div> <!--// .btn_area -->
-          </div> <!--// .main_inner -->
-        </div> <!--// #main2 -->
-      </div>
-    </section> <!--// #main_slide -->
-
-    <section id="best_seller" class="section">
-      <div class="section_inner">
-        <div class="txt_group">
-          <div class="txt_title">
-            <p>베스트셀러는</p>
-            <p class="text_bold">다양한 셀러와</p>
-            <p class="text_bold"><span>잇</span> 마켓을 운영해요</p>
+    <main>
+      <section id="main_slide" class="swiper mySwiper section">
+        <div class="swiper-wrapper">
+          <div id="main1" class="swiper-slide">
+            <div class="main_inner">
+              <div class="main_txt">
+                <p>소비를</p>
+                <p>가치로 <span>잇</span>다</p>
+              </div>
+              <!--// .main_txt -->
+              <div class="btn_area">
+                <a class="slide_btn" href="#">셀러시작하기</a>
+                <p>
+                  <a class="slide_btn" href="#">입점문의</a>
+                  <a class="slide_btn" href="#">라이브커머스</a>
+                </p>
+              </div>
+              <!--// .btn_area -->
+            </div>
+            <!--// .main_inner -->
           </div>
+          <!--// #main1 -->
 
-          <a href="#" class="seller_btn">
-            <span>1분컷 사용법</span>
-          </a>
-
-          <p class="seller_txt">*it-마켓 : 베스트셀러만의 특가 판매 혜택</p>
-          <p class="seller_txt">실제 셀러의 판매 금액입니다.</p>
-
-        </div> <!--// .txt_group -->
-
-        <div id="seller_swiper" class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="slide1 swiper-slide">
-              <div class="seller_item_inner">
-                <p class="card_title">여행블로거 김oo 셀러</p>
-                <p class="sub_title">판매금액</p>
-                <p class="price">58,745,320원</p>
+          <div id="main2" class="swiper-slide">
+            <div class="main_inner">
+              <div class="main_txt">
+                <p>인플루언서의</p>
+                <p>혜택을 <span>잇</span>다</p>
               </div>
-            </div> <!--// .slide1 -->
-
-            <div class="slide2 swiper-slide">
-              <div class="seller_item_inner">
-                <p class="card_title">여행블로거 김oo 셀러</p>
-                <p class="sub_title">판매금액</p>
-                <p class="price">58,745,320원</p>
+              <!--// .main_txt -->
+              <div class="btn_area">
+                <a class="slide_btn" href="#">인플루언서 시작하기</a>
+                <p>
+                  <a class="slide_btn" href="#">입점문의</a>
+                  <a class="slide_btn" href="#">라이브커머스</a>
+                </p>
               </div>
-            </div> <!--// .slide2 -->
+              <!--// .btn_area -->
+            </div>
+            <!--// .main_inner -->
+          </div>
+          <!--// #main2 -->
+        </div>
+      </section>
+      <!--// #main_slide -->
 
-            <div class="slide3 swiper-slide">
-              <div class="seller_item_inner">
-                <p class="card_title">여행블로거 김oo 셀러</p>
-                <p class="sub_title">판매금액</p>
-                <p class="price">58,745,320원</p>
+      <section id="best_seller" class="section">
+        <div class="section_inner">
+          <div class="txt_group">
+            <div class="txt_title">
+              <p>베스트셀러는</p>
+              <p class="text_bold">다양한 셀러와</p>
+              <p class="text_bold"><span>잇</span> 마켓을 운영해요</p>
+            </div>
+
+            <a href="#" class="seller_btn">
+              <span>1분컷 사용법</span>
+            </a>
+
+            <p class="seller_txt">*it-마켓 : 베스트셀러만의 특가 판매 혜택</p>
+            <p class="seller_txt">실제 셀러의 판매 금액입니다.</p>
+          </div>
+          <!--// .txt_group -->
+
+          <div id="seller_swiper" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="slide1 swiper-slide">
+                <div class="seller_item_inner">
+                  <p class="card_title">여행블로거 김oo 셀러</p>
+                  <p class="sub_title">판매금액</p>
+                  <p class="price">58,745,320원</p>
+                </div>
               </div>
-            </div> <!--// .slide3 -->
+              <!--// .slide1 -->
 
-            <div class="slide4 swiper-slide">
-              <div class="seller_item_inner">
-                <p class="card_title">여행블로거 김oo 셀러</p>
-                <p class="sub_title">판매금액</p>
-                <p class="price">58,745,320원</p>
+              <div class="slide2 swiper-slide">
+                <div class="seller_item_inner">
+                  <p class="card_title">여행블로거 김oo 셀러</p>
+                  <p class="sub_title">판매금액</p>
+                  <p class="price">58,745,320원</p>
+                </div>
               </div>
-            </div> <!--// .slide4 -->
+              <!--// .slide2 -->
 
-          </div> <!--// .swiper-wrapper -->
-          
-          <div class="swiper-pagination"></div>
-        </div> <!--// #seller_swiper -->
+              <div class="slide3 swiper-slide">
+                <div class="seller_item_inner">
+                  <p class="card_title">여행블로거 김oo 셀러</p>
+                  <p class="sub_title">판매금액</p>
+                  <p class="price">58,745,320원</p>
+                </div>
+              </div>
+              <!--// .slide3 -->
 
+              <div class="slide4 swiper-slide">
+                <div class="seller_item_inner">
+                  <p class="card_title">여행블로거 김oo 셀러</p>
+                  <p class="sub_title">판매금액</p>
+                  <p class="price">58,745,320원</p>
+                </div>
+              </div>
+              <!--// .slide4 -->
+            </div>
+            <!--// .swiper-wrapper -->
 
-      </div> <!--// .section_inner -->
-    </section> <!--// #best_seller -->
+            <div class="seller_pager swiper-pagination"></div>
+          </div>
+          <!--// #seller_swiper -->
+        </div>
+        <!--// .section_inner -->
+      </section>
+      <!--// #best_seller -->
+      <section id="review">
+        <p class="title">
+          스타일셀러와
+          <br />
+          꿈꾸는 셀러
+        </p>
 
-  </main>
-
-</body>
+        <!-- contents -->
+        <div class="review_item">
+          <div class="card">
+            <div class="card_bg"></div>
+            <!-- card contents -->
+            <div class="card_head">
+              <p class="card_title">
+                영양제가 좋아써 쓴 <br />
+                찐 리뷰가 대박났어요 !
+              </p>
+              <div class="card_profile">
+                <img src="./images/seller_profile1.png" alt="profile image" />
+                <p>여행블로거 | 이웃 733명</p>
+              </div>
+            </div>
+            <!-- card hover contents -->
+            <div class="card_hover">
+              <div>
+                <p class="card_subtitle">
+                  <span>콜라겐 영양제</span>
+                  <span>판매액 12,040,000원</span>
+                </p>
+                <p class="comment">제품가 4만원 x 45일 x 하루 7건</p>
+                <p class="content">
+                  블로그 글쓰기를 좋아해서 쓰꼬 효과 본 영양제 리뷰를 판매
+                  링크와 함께 올렸더니 문의랑 주문이 너무 많이 들어와서 깜짝
+                  놀랐어요 !
+                </p>
+              </div>
+              <img class="ui_img" src="./images/seller_ui1.png" alt="" />
+            </div>
+            <!-- // .card_hover -->
+          </div>
+          <div class="card">
+            <div class="card_bg"></div>
+            <!-- card contents -->
+            <div class="card_head">
+              <p class="card_title">
+                아이와 가벼운 한끼로 <br />
+                수익 벌었어요.
+              </p>
+              <div class="card_profile">
+                <img src="./images/seller_profile2.png" alt="profile image" />
+                <p>육아맘 다이어터 | 팔로우 15,999명</p>
+              </div>
+            </div>
+            <!-- card hover contents -->
+            <div class="card_hover">
+              <div>
+                <p class="card_subtitle">
+                  <span>콜라겐 영양제</span>
+                  <span>판매액 12,040,000원</span>
+                </p>
+                <p class="comment">제품가 4만원 x 45일 x 하루 7건</p>
+                <p class="content">
+                  블로그 글쓰기를 좋아해서 쓰꼬 효과 본 영양제 리뷰를 판매
+                  링크와 함께 올렸더니 문의랑 주문이 너무 많이 들어와서 깜짝
+                  놀랐어요 !
+                </p>
+              </div>
+              <img class="ui_img" src="./images/seller_ui2.png" alt="" />
+            </div>
+            <!-- // .card_hover -->
+          </div>
+          <div class="card">
+            <div class="card_bg"></div>
+            <!-- card contents -->
+            <div class="card_head">
+              <p class="card_title">
+                정말 효과 본 뷰티템을<br />
+                리뷰했어요 !
+              </p>
+              <div class="card_profile">
+                <img src="./images/seller_profile3.png" alt="profile image" />
+                <p>맘&뷰티 인플루언서 | 팔로워 22,255명</p>
+              </div>
+            </div>
+            <!-- card hover contents -->
+            <div class="card_hover">
+              <div>
+                <p class="card_subtitle">
+                  <span>콜라겐 영양제</span>
+                  <span>판매액 12,040,000원</span>
+                </p>
+                <p class="comment">제품가 4만원 x 45일 x 하루 7건</p>
+                <p class="content">
+                  블로그 글쓰기를 좋아해서 쓰꼬 효과 본 영양제 리뷰를 판매
+                  링크와 함께 올렸더니 문의랑 주문이 너무 많이 들어와서 깜짝
+                  놀랐어요 !
+                </p>
+              </div>
+              <img class="ui_img" src="./images/seller_ui3.png" alt="" />
+            </div>
+            <!-- // .card_hover -->
+          </div>
+          <div class="card">
+            <div class="card_bg"></div>
+            <!-- card contents -->
+            <div class="card_head">
+              <p class="card_title">
+                건강한 간식을 <br />
+                인천에게 소개했어요 !
+              </p>
+              <div class="card_profile">
+                <img src="./images/seller_profile4.png" alt="profile image" />
+                <p>푸드 인플루언서 | 팔로우 11,194명</p>
+              </div>
+            </div>
+            <!-- card hover contents -->
+            <div class="card_hover">
+              <div>
+                <p class="card_subtitle">
+                  <span>콜라겐 영양제</span>
+                  <span>판매액 12,040,000원</span>
+                </p>
+                <p class="comment">제품가 4만원 x 45일 x 하루 7건</p>
+                <p class="content">
+                  블로그 글쓰기를 좋아해서 쓰꼬 효과 본 영양제 리뷰를 판매
+                  링크와 함께 올렸더니 문의랑 주문이 너무 많이 들어와서 깜짝
+                  놀랐어요 !
+                </p>
+              </div>
+              <img class="ui_img" src="./images/seller_ui4.png" alt="" />
+            </div>
+            <!-- // .card_hover -->
+          </div>
+        </div>
+        <!-- review_item -->
+      </section>
+      <!-- // #review -->
+    </main>
+  </body>
 </html>
-

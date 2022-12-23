@@ -1,16 +1,17 @@
 @charset 'UTF-8';
 
-body * { 
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+body * {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-size: 16px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* nav */
 nav {
   position: absolute;
   width: 100%;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   z-index: 10;
 
   #nav {
@@ -22,13 +23,14 @@ nav {
       margin-right: 26px;
     }
     a {
-      font: bold 16px/1.5 'Spoqa Han Sans Neo';
+      font: bold 16px/1.5 "Spoqa Han Sans Neo";
       // font: font-weight font-size/line-height font-family;
 
       color: #262626;
     }
-    .logo a{
-      width: 123px; height: 28px;
+    .logo a {
+      width: 123px;
+      height: 28px;
       display: block;
       margin-right: 62px;
       background: url("../images/bs_logo.svg") no-repeat center center / cover;
@@ -45,16 +47,13 @@ nav {
       font-size: 0;
       color: transparent; /* 글자 색상을 투명색으로 설정 */
     }
-
   } // e: #nav
-
 } // e: nav
 
 main {
-
   .section {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     /*
       vh - 뷰포트 높이 기준 %
       vw - 뷰포트 너비 기준 %
@@ -72,7 +71,8 @@ main {
   }
 
   #main_slide .swiper-slide {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     /* 수직축(세로방향) 기준 콘텐츠를 가운데 배치 */
@@ -82,24 +82,24 @@ main {
   .swiper-slide-active {
     .main_inner .main_txt {
       transform: translateY(0);
-      transition-delay: .4s;
+      transition-delay: 0.4s;
       opacity: 1;
     }
     .main_inner .btn_area {
       transform: translateY(0);
       opacity: 1;
-      transition-delay: .7s;
+      transition-delay: 0.7s;
     }
   }
 
-
   .main_inner {
-    width: 100%; max-width: 1412px;
+    width: 100%;
+    max-width: 1412px;
     margin: 0 auto;
     .main_txt {
       margin-bottom: 30px;
       transform: translateY(50px);
-      transition: all .4s;
+      transition: all 0.4s;
       opacity: 0;
       p {
         font-size: 64px;
@@ -113,17 +113,20 @@ main {
         margin-right: 8px;
       }
       span::after {
-        content:''; display: block;
-        width: 58px; height: 39px;
+        content: "";
+        display: block;
+        width: 58px;
+        height: 39px;
         background: url("../images/it.png") no-repeat center / cover;
         position: absolute;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
       }
     } //e: .main_txt
 
     .btn_area {
       transform: translateY(50px);
-      transition: all .4s;
+      transition: all 0.4s;
       opacity: 0;
 
       .slide_btn {
@@ -135,7 +138,7 @@ main {
         line-height: 1;
         padding: 16px 30px;
         border-radius: 34px;
-        transition: all .3s;
+        transition: all 0.3s;
         margin-right: 6px;
       }
       .slide_btn:hover {
@@ -148,7 +151,6 @@ main {
     } //e: .btn_area
   } // e: .main_inner
 
-
   #best_seller {
     background: url("../images/bg_gradient.jpeg") no-repeat center / cover;
 
@@ -157,10 +159,10 @@ main {
       max-width: 100%;
       display: flex;
       align-items: center;
-      padding-left: calc((100% - 1358px)/ 2);
+      padding-left: calc((100% - 1358px) / 2);
     }
 
-    .txt_title{
+    .txt_title {
       margin-bottom: 170px;
 
       p {
@@ -175,13 +177,15 @@ main {
         padding-right: 20px;
       }
       span::after {
-        content:''; display: block;
-        width: 20px; height: 20px;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
         background: url("../images/ic_it.png") no-repeat center / cover;
         position: absolute;
-        right: 0; top: 0;
+        right: 0;
+        top: 0;
       }
-
     } // e: .txt_title
 
     .seller_btn {
@@ -198,11 +202,14 @@ main {
         display: inline-block;
       }
       span::after {
-        content:''; display: block;
-        width: 8px; height: 14px;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 14px;
         background: url("../images/ic_arrow.png") no-repeat right / cover;
         position: absolute;
-        right: 0; top: 2px;
+        right: 0;
+        top: 2px;
         transform: rotate(180deg);
       }
     } // e: .seller_btn
@@ -211,17 +218,17 @@ main {
       font-weight: 500;
       line-height: 1.3;
       color: #9d9d9d;
-
     }
-    .seller_txt:nth-of-type(2){
-      color:#ab96fd;
+    .seller_txt:nth-of-type(2) {
+      color: #ab96fd;
     }
 
     #seller_swiper {
       width: calc(100% - (382px + 66px));
-      outline: 1px solid blue;
+      // outline: 1px solid blue;
       margin-left: auto;
       margin-right: 0;
+      padding-bottom: 40px;
 
       .swiper-slide {
         background: #ddd;
@@ -263,7 +270,7 @@ main {
         .sub_title {
           font-size: 16px;
           font-weight: bold;
-          color:#ab96fd;
+          color: #ab96fd;
           margin-bottom: 4px;
         }
         .price {
@@ -271,7 +278,146 @@ main {
           font-weight: bold;
         }
       } // e: .seller_item_inner
-    } // e: #seller_swiper
-  } // e: #best_seller 
 
+      .seller_pager {
+        bottom: 0;
+        top: auto;
+        span {
+          background: #5d4f79;
+        }
+      }
+    } // e: #seller_swiper
+  } // e: #best_seller
+  .title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 45px;
+  }
+  // card hover effect
+  #review .card:hover {
+    .card_hover {
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.5s;
+    }
+    .card_head {
+      height: 0;
+      opacity: 0;
+      transition: 0.2s;
+    }
+    .card_bg {
+      filter: blur(20px);
+      transition: 0.4s;
+    }
+  }
+  #review {
+    width: 100%;
+    max-width: 1412px;
+    margin: 0 auto;
+    padding: 180px 24px;
+
+    .review_item {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        // outline: 1px solid blue;
+        width: calc(50% - 12px);
+        height: 622px;
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+        padding: 40px 44px 0;
+        margin-bottom: 24px;
+      }
+      .card:nth-child(2n) {
+        margin-left: 24px;
+      }
+      .card:nth-child(2) .card_bg {
+        background: url("../images/bg_review2.jpeg") no-repeat center / cover;
+      }
+      .card:nth-child(3) .card_bg {
+        background: url("../images/bg_review3.jpg") no-repeat center / cover;
+      }
+      .card:nth-child(4) .card_bg {
+        background: url("../images/bg_review4.jpg") no-repeat center / cover;
+      }
+      .card_bg {
+        width: 100%;
+        height: 100%;
+        background: url("../images/bg_review1.jpg") no-repeat center / cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .card_title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.4;
+        position: relative;
+      }
+      .card_title::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 33px;
+        background: url("../images/ic_plus.png") no-repeat center / cover;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
+      .card_profile {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 20px;
+          margin-left: 10px;
+        }
+      }
+      .card_hover {
+        /* 숨김 처리 */
+        transform: translateY(150px);
+        opacity: 0;
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        cursor: pointer;
+        .card_subtitle {
+          letter-spacing: -0.01em;
+          margin-bottom: 7px;
+          span {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 0.9;
+            display: inline-block;
+          }
+          span:nth-child(2) {
+            border-left: 2px solid #262626;
+            padding-left: 10px;
+            margin-left: 10px;
+          }
+        }
+        .comment {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .content {
+          font-size: 18px;
+          line-height: 1.5em;
+          margin-top: 24px;
+        }
+        .ui_img {
+          width: 70%;
+          margin: 35px auto 0;
+        }
+      } // e: .card_hover
+    } // e: .review_item
+  } // e: #review
 } // e: main
