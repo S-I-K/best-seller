@@ -420,4 +420,57 @@ main {
       } // e: .card_hover
     } // e: .review_item
   } // e: #review
+  #faq {
+    max-width: 1412px;
+    margin: 0 auto;
+    padding: 100px 24px 190px;
+    .faq_list {
+      display: flex;
+    }
+    ul {
+      width: 49%;
+    }
+    ul:not(:last-child) {
+      margin-right: 2%;
+    }
+    li {
+      border-bottom: 1px solid #c1c1c1;
+      padding: 35px 0;
+    }
+    li.arrow_action .faq_head::after {
+      transform: rotate(0deg);
+    }
+    .faq_head {
+      font-size: 28px;
+      font-weight: 700;
+      padding: 0 50px 0 20px;
+      position: relative;
+      cursor: pointer;
+      span {
+        color: #ab96fd;
+        font-size: 34px;
+        line-height: 1;
+        margin-right: 16px;
+        margin-top: -2.5px;
+      }
+    }
+    .faq_head::after {
+      content: "";
+      display: block;
+      width: 21.5px;
+      height: 12px;
+      background: url("../images/ic_arrow_faq.png") no-repeat center / 100%;
+      position: absolute;
+      right: 20px;
+      top: 12px;
+      transform: rotate(180deg);
+      transition: all 0.4s;
+    }
+    .faq_content {
+      color: #9d9d9d;
+      line-height: 1.8;
+      padding: 15px 58px;
+      display: none;
+    }
+  } // e: #faq
 } // e: main
