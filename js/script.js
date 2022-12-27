@@ -36,5 +36,37 @@
       $(this).siblings(".faq_content").stop().slideToggle(400);
       $(this).parents("li").toggleClass("arrow_action");
     });
+
+    /* scroll effect */
+    $(".txt_title").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
+    $(".seller_btn").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
+    $(".seller_txt").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
+    $(".title").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
+    $(".review_item").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
+    $(".faq_list").scrollToGiveClass({
+      class: "scroll",
+      baseline: "middle",
+      add: 300,
+    });
   });
 })(jQuery);

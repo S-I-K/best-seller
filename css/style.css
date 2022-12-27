@@ -142,8 +142,15 @@ main #best_seller .section_inner {
   align-items: center;
   padding-left: calc((100% - 1358px) / 2);
 }
+main #best_seller .txt_title.scroll {
+  transform: translateY(0);
+  opacity: 1;
+}
 main #best_seller .txt_title {
   margin-bottom: 170px;
+  transform: translateY(100px);
+  transition: all 0.4s;
+  opacity: 0;
 }
 main #best_seller .txt_title p {
   font-size: 48px;
@@ -166,6 +173,10 @@ main #best_seller .txt_title span::after {
   right: 0;
   top: 0;
 }
+main #best_seller .seller_btn.scroll {
+  transform: translateY(0);
+  opacity: 1;
+}
 main #best_seller .seller_btn {
   display: inline-block;
   background: #262626;
@@ -173,6 +184,9 @@ main #best_seller .seller_btn {
   padding: 16px 20px;
   border-radius: 14px;
   margin-bottom: 28px;
+  transform: translateY(100px);
+  transition: all 0.4s;
+  opacity: 0;
 }
 main #best_seller .seller_btn span {
   position: relative;
@@ -190,7 +204,14 @@ main #best_seller .seller_btn span::after {
   top: 2px;
   transform: rotate(180deg);
 }
+main #best_seller .seller_txt.scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
 main #best_seller .seller_txt {
+  transition: all 0.4s;
+  opacity: 0;
+  transform: translateY(100px);
   font-weight: 500;
   line-height: 1.3;
   color: #9d9d9d;
@@ -256,7 +277,14 @@ main #best_seller #seller_swiper .seller_pager {
 main #best_seller #seller_swiper .seller_pager span {
   background: #5d4f79;
 }
+main .title.scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
 main .title {
+  transition: all 0.4s;
+  transform: translateY(150px);
+  opacity: 0;
   font-weight: bold;
   font-size: 50px;
   line-height: 1.3;
@@ -282,7 +310,14 @@ main #review {
   margin: 0 auto;
   padding: 180px 24px;
 }
+main #review .review_item.scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
 main #review .review_item {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.4s;
   display: flex;
   flex-wrap: wrap;
 }
@@ -385,8 +420,15 @@ main #faq {
   margin: 0 auto;
   padding: 100px 24px 190px;
 }
+main #faq .faq_list.scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
 main #faq .faq_list {
   display: flex;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.4s;
 }
 main #faq ul {
   width: 49%;
@@ -432,4 +474,79 @@ main #faq .faq_content {
   line-height: 1.8;
   padding: 15px 58px;
   display: none;
+}
+
+footer {
+  background: #262626;
+  font-family: "Spoqa Han Sans Neo", "sans-serif" !important;
+}
+footer .footer-wrap {
+  max-width: 1412px;
+  margin: 0 auto;
+  position: relative;
+  padding: 36px 24px;
+}
+footer .footer-menu {
+  color: #fff;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .footer-menu h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+footer .footer-menu ul {
+  display: flex;
+  margin-left: 20px;
+}
+footer .footer-menu li > a {
+  font-size: 14px;
+  font-weight: 500;
+}
+footer .footer-menu li:not(:last-child) {
+  margin-right: 26px;
+}
+footer .footer_info .info_txt {
+  max-width: 1000px;
+  font-size: 0;
+  padding-right: 100px;
+}
+footer .footer_info .info_txt span {
+  font-size: 12px;
+  line-height: 1;
+  color: #c1c1c1;
+  font-weight: 500;
+  display: inline-block;
+  margin: 3px 0;
+}
+footer .footer_info .info_txt span:not(:last-child) {
+  border-right: 1px solid #c1c1c1;
+  margin-right: 6px;
+  padding-right: 6px;
+}
+footer .footer_info .sns_group {
+  position: absolute;
+  right: 24px;
+  bottom: 36px;
+}
+footer .footer_info .sns_group a {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  font-size: 0;
+}
+footer .footer_info .sns_group .instar {
+  background: url("../images/ic_insta.png") no-repeat center/cover;
+  margin-right: 5px;
+}
+footer .footer_info .sns_group .blog {
+  background: url("../images/ic_blog.png") no-repeat center/cover;
+}
+footer .footer_info .copyright {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
 }
