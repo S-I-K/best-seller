@@ -68,5 +68,11 @@
       baseline: "middle",
       add: 300,
     });
+
+    /* mobile-nav event */
+    $(".m_menu").click(function () {
+      $(".m_nav").toggle("200");
+      $(this).toggleClass("close");
+    });
   });
 })(jQuery);
