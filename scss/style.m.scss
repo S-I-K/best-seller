@@ -103,4 +103,72 @@
       }
     }
   }
+  main .main_inner .main_txt p {
+    font-size: 2.5rem;
+  }
+  main .main_inner .main_txt span {
+    padding-right: 36px;
+  }
+  main .main_inner .main_txt span::after {
+    width: 36px;
+    height: 28px;
+    background: url("../images/it.png") no-repeat center / 100%;
+  }
+  main .main_inner .btn_area .slide_btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  main #best_seller {
+    height: auto;
+    padding-bottom: 100px;
+    .section_inner {
+      flex-direction: column;
+      padding-left: 0;
+      padding-top: 55px;
+    }
+  }
+
+  .txt_group {
+    text-align: center;
+  }
+
+  main #best_seller .txt_title {
+    margin: 113px 0 22px;
+    p {
+      font-size: 1.7rem;
+    }
+  }
+
+  main #best_seller .seller_btn {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  main #best_seller .seller_txt {
+    font-size: 14px;
+  }
+
+  main #best_seller #seller_swiper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 54px;
+    padding-bottom: 116px;
+  }
+  main #best_seller #seller_swiper .swiper-slide {
+    height: 420px;
+    width: 310px;
+  }
+  main #best_seller #seller_swiper .seller_pager {
+    width: 40%;
+    margin: 0 auto;
+    right: 0;
+  }
+}
+
+/* html >= 769px */
+@media (min-width: 769px) {
+  .m_nav {
+    display: none;
+  }
 }

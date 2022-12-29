@@ -16,7 +16,8 @@
     var sellerSwiper = new Swiper("#seller_swiper", {
       loop: true, // 무한루프
       slidesPerView: "auto", // 한 화면에 보여줄 슬라이드 수 (기본값 1) , auto - css 너비를 그대로 유지한 상태로 슬라이드 기능만 적용됨.
-      spaceBetween: 33, // 슬라이드 사이 간격 (px 생략)
+      spaceBetween: 24, // 슬라이드 사이 간격 (px 생략)
+      centeredSlides: true,
       autoplay: {
         // 자동재생
         delay: 4000,
@@ -25,6 +26,12 @@
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
+      },
+      breakpoints: {
+        769: {
+          centeredSlides: false,
+          spaceBetween: 33,
+        },
       },
     });
 
