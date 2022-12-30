@@ -290,20 +290,6 @@ main .title {
   line-height: 1.3;
   margin-bottom: 45px;
 }
-main #review .card:hover .card_hover {
-  transform: translateY(0);
-  opacity: 1;
-  transition: all 0.5s;
-}
-main #review .card:hover .card_head {
-  height: 0;
-  opacity: 0;
-  transition: 0.2s;
-}
-main #review .card:hover .card_bg {
-  filter: blur(20px);
-  transition: 0.4s;
-}
 main #review {
   width: 100%;
   max-width: 1412px;

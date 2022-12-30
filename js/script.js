@@ -81,5 +81,34 @@
       $(".m_nav").toggle("200");
       $(this).toggleClass("close");
     });
+
+    // card click event
+    /* 카드 영역 클릭 시 view 클래스 추가 제거 반복 */
+
+    if (matchMedia("screen and (max-width: 768px)").matches) {
+      $(".card").click(function () {
+        $(this).siblings().removeClass("view");
+        $(this).toggleClass("view");
+      });
+    }
+    /* viewport 너비가 조절 될 때마다 js를 reload */
+    function Mobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    }
+    var delay = 300;
+    var timer = null;
+    $(window).on("resize", function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        document.location.reload();
+      }, delay);
+    });
+    if (!Mobile) {
+      window.onresize = function () {
+        document.location.reload();
+      };
+    }
   });
 })(jQuery);

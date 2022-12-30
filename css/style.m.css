@@ -12,15 +12,15 @@
     padding-left: calc((100% - 1142px) / 2);
   }
   main #review {
-    min-width: 1250px;
+    max-width: 1250px;
     padding: 180px 54px;
   }
   main #faq {
-    min-width: 1250px;
+    max-width: 1250px;
     padding: 180px 54px;
   }
   footer .footer_wrap {
-    min-width: 1250px;
+    max-width: 1250px;
     padding: 36px 20px;
   }
 }
@@ -34,6 +34,20 @@
 @media (max-width: 768px) {
   nav #nav li:not(:first-child) {
     display: none;
+  }
+  #review .card.view .card_hover {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  #review .card.view .card_head {
+    height: 0;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  #review .card.view .card_bg {
+    filter: blur(20px);
+    transition: 0.4s;
   }
   .m_menu.close span {
     background: #fff;
@@ -152,10 +166,101 @@
     margin: 0 auto;
     right: 0;
   }
+  main .title {
+    font-size: 2rem;
+  }
+  main #review .review_item .card {
+    width: 100%;
+    height: 450px;
+  }
+  main #review .review_item .card:nth-child(2n) {
+    margin-left: 0;
+  }
+  main #review .review_item .card_title {
+    font-size: 1.4rem;
+    position: static;
+  }
+  main #review .review_item .card_profile p {
+    font-size: 16px;
+  }
+  main #review .review_item .card_title::after {
+    top: auto;
+    bottom: 40px;
+    right: 40px;
+  }
+  main #faq {
+    height: auto;
+  }
+  main #faq ul {
+    width: 100%;
+  }
+  main #faq .faq_list {
+    flex-direction: column;
+  }
+  main #faq .faq_head {
+    font-size: 18px;
+  }
+  main #faq .faq_head span {
+    font-size: 22px;
+  }
+  main #faq .faq_head::after {
+    width: 16.5px;
+    height: 7px;
+  }
+  main #faq .faq_content {
+    font-size: 14px;
+    padding: 15px 26px;
+  }
+  footer .footer-menu {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-menu h1 {
+    margin-bottom: 20px;
+  }
+  footer .footer-wrap {
+    padding: 80px 24px;
+  }
+  footer .footer-menu ul {
+    margin: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  footer .footer_info .info_txt {
+    min-width: 75%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .footer_info .info_txt span {
+    margin: 5px 0;
+  }
+  footer .footer_info .sns_group {
+    position: static;
+    text-align: center;
+  }
+  footer .footer_info .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 /* html >= 769px */
 @media (min-width: 769px) {
   .m_nav {
     display: none;
+  }
+  #review .card:hover .card_hover {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  #review .card:hover .card_head {
+    height: 0;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  #review .card:hover .card_bg {
+    filter: blur(20px);
+    transition: 0.4s;
   }
 }

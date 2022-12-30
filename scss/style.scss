@@ -322,22 +322,22 @@ main {
     margin-bottom: 45px;
   }
   // card hover effect
-  #review .card:hover {
-    .card_hover {
-      transform: translateY(0);
-      opacity: 1;
-      transition: all 0.5s;
-    }
-    .card_head {
-      height: 0;
-      opacity: 0;
-      transition: 0.2s;
-    }
-    .card_bg {
-      filter: blur(20px);
-      transition: 0.4s;
-    }
-  }
+  // #review .card:hover {
+  //   .card_hover {
+  //     transform: translateY(0);
+  //     opacity: 1;
+  //     transition: all 0.5s;
+  //   }
+  //   .card_head {
+  //     height: 0;
+  //     opacity: 0;
+  //     transition: 0.2s;
+  //   }
+  //   .card_bg {
+  //     filter: blur(20px);
+  //     transition: 0.4s;
+  //   }
+  // }
   #review {
     width: 100%;
     max-width: 1412px;
