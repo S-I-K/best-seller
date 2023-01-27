@@ -49,6 +49,9 @@ nav #nav .logo a {
   color: #fff;
 }
 
+main {
+  background: #f0f0f0;
+}
 main .section {
   width: 100%;
   height: 100vh;
@@ -301,12 +304,25 @@ main .title {
   font-size: 50px;
   line-height: 1.3;
   margin-bottom: 45px;
+  font-family: "my-body";
 }
 main #review {
   width: 100%;
   max-width: 1412px;
   margin: 0 auto;
   padding: 180px 24px;
+}
+main #review p.title {
+  color: #414141;
+  font-size: 48px;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+main #review p.title .stroke {
+  font-family: "my-head";
+  font-size: 74px;
+  color: #262626;
+  font-weight: 700;
 }
 main #review .review_item.scroll {
   opacity: 1;
@@ -321,7 +337,7 @@ main #review .review_item {
 }
 main #review .review_item .card {
   width: calc(50% - 12px);
-  height: 622px;
+  height: 302px;
   border-radius: 14px;
   overflow: hidden;
   position: relative;
@@ -332,7 +348,7 @@ main #review .review_item .card:nth-child(2n) {
   margin-left: 24px;
 }
 main #review .review_item .card:nth-child(2) .card_bg {
-  background: url("../images/bg_review2.jpeg") no-repeat center/cover;
+  background: url("../images/bg_review2.jpg") no-repeat center/cover;
 }
 main #review .review_item .card:nth-child(3) .card_bg {
   background: url("../images/bg_review3.jpg") no-repeat center/cover;
@@ -349,11 +365,23 @@ main #review .review_item .card_bg {
   left: 0;
   z-index: -1;
 }
+main #review .review_item .card_bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
 main #review .review_item .card_title {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
+  color: #262626;
   position: relative;
+  font-family: "my-body";
 }
 main #review .review_item .card_title::after {
   content: "";
@@ -391,9 +419,11 @@ main #review .review_item .card_hover .card_subtitle {
 }
 main #review .review_item .card_hover .card_subtitle span {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 0.9;
   display: inline-block;
+  font-family: "my-body";
+  color: #262626;
 }
 main #review .review_item .card_hover .card_subtitle span:nth-child(2) {
   border-left: 2px solid #262626;
@@ -401,8 +431,10 @@ main #review .review_item .card_hover .card_subtitle span:nth-child(2) {
   margin-left: 10px;
 }
 main #review .review_item .card_hover .comment {
+  font-family: "my-body";
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  color: #414141;
 }
 main #review .review_item .card_hover .content {
   font-size: 18px;
@@ -442,6 +474,7 @@ main #faq li.arrow_action .faq_head::after {
   transform: rotate(0deg);
 }
 main #faq .faq_head {
+  font-family: "my-body";
   font-size: 28px;
   font-weight: 700;
   padding: 0 50px 0 20px;
@@ -449,7 +482,7 @@ main #faq .faq_head {
   cursor: pointer;
 }
 main #faq .faq_head span {
-  color: #ab96fd;
+  color: #262626;
   font-size: 34px;
   line-height: 1;
   margin-right: 16px;
@@ -472,11 +505,16 @@ main #faq .faq_content {
   line-height: 1.8;
   padding: 15px 58px;
   display: none;
+  font-family: "my-body";
 }
 
 footer {
   background: #262626;
   font-family: "Spoqa Han Sans Neo", "sans-serif" !important;
+}
+footer .stroke {
+  font-family: "my-head";
+  font-size: 28px;
 }
 footer .footer-wrap {
   max-width: 1412px;

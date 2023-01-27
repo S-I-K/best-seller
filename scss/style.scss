@@ -54,6 +54,7 @@ nav {
 } // e: nav
 
 main {
+  background: #f0f0f0;
   .section {
     width: 100%;
     height: 100vh;
@@ -330,6 +331,7 @@ main {
     font-size: 50px;
     line-height: 1.3;
     margin-bottom: 45px;
+    font-family: 'my-body';
   }
   // card hover effect
   // #review .card:hover {
@@ -353,7 +355,18 @@ main {
     max-width: 1412px;
     margin: 0 auto;
     padding: 180px 24px;
-
+    p.title {
+      color: #414141;
+      font-size: 48px;
+      letter-spacing: -.05em;
+      font-weight: 400;
+      .stroke {
+        font-family: 'my-head';
+        font-size: 74px;
+        color: #262626;
+        font-weight: 700;
+      }
+    }
     .review_item.scroll {
       opacity: 1;
       transform: translateY(0);
@@ -367,7 +380,7 @@ main {
       .card {
         // outline: 1px solid blue;
         width: calc(50% - 12px);
-        height: 622px;
+        height: 302px;
         border-radius: 14px;
         overflow: hidden;
         position: relative;
@@ -378,7 +391,7 @@ main {
         margin-left: 24px;
       }
       .card:nth-child(2) .card_bg {
-        background: url("../images/bg_review2.jpeg") no-repeat center / cover;
+        background: url("../images/bg_review2.jpg") no-repeat center / cover;
       }
       .card:nth-child(3) .card_bg {
         background: url("../images/bg_review3.jpg") no-repeat center / cover;
@@ -395,12 +408,24 @@ main {
         left: 0;
         z-index: -1;
       }
+      .card_bg::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,.4);
+      }
 
       .card_title {
         font-size: 34px;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.4;
+        color: #262626;
         position: relative;
+        font-family: 'my-body';
       }
       .card_title::after {
         content: "";
@@ -438,9 +463,11 @@ main {
           margin-bottom: 7px;
           span {
             font-size: 26px;
-            font-weight: 700;
+            font-weight: 600;
             line-height: 0.9;
             display: inline-block;
+            font-family: 'my-body';
+            color: #262626;
           }
           span:nth-child(2) {
             border-left: 2px solid #262626;
@@ -449,8 +476,10 @@ main {
           }
         }
         .comment {
+          font-family: 'my-body';
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 400;
+          color: #414141;
         }
         .content {
           font-size: 18px;
@@ -492,13 +521,14 @@ main {
       transform: rotate(0deg);
     }
     .faq_head {
+      font-family: 'my-body';
       font-size: 28px;
       font-weight: 700;
       padding: 0 50px 0 20px;
       position: relative;
       cursor: pointer;
       span {
-        color: #ab96fd;
+        color: #262626;
         font-size: 34px;
         line-height: 1;
         margin-right: 16px;
@@ -522,6 +552,7 @@ main {
       line-height: 1.8;
       padding: 15px 58px;
       display: none;
+      font-family: 'my-body';
     }
   } // e: #faq
 } // e: main
@@ -529,7 +560,10 @@ main {
 footer {
   background: #262626;
   font-family: "Spoqa Han Sans Neo", "sans-serif" !important;
-
+  .stroke {
+    font-family: 'my-head';
+    font-size: 28px;
+  }
   .footer-wrap {
     max-width: 1412px;
     margin: 0 auto;

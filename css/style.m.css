@@ -243,6 +243,9 @@
     text-align: center;
     margin-top: 20px;
   }
+  main #review .review_item .card_hover .content {
+    font-family: "my-body";
+  }
 }
 /* html >= 769px */
 @media (min-width: 769px) {
@@ -253,6 +256,11 @@
     transform: translateY(0);
     opacity: 1;
     transition: all 0.5s;
+  }
+  #review .card:hover .card_hover .content {
+    font-family: "my-body";
+    color: #262626;
+    font-weight: 300;
   }
   #review .card:hover .card_head {
     height: 0;
